@@ -367,6 +367,12 @@ p{color:white; text-align: center;font-size: .7em; position: relative; top:12px;
   box-shadow: 1px 1px 15px black;
   cursor: pointer;
 }
+
+::placeholder{
+  font-style: italic;
+  font-size: .8em;
+}
+
 </style>
 
 
@@ -410,6 +416,11 @@ p{color:white; text-align: center;font-size: .7em; position: relative; top:12px;
         <div class="tagging">
           <label for="No Telp" id=TTelp>Nomor Whatsapp</label>
           <input onclick="ClickeD3()" type="text" id="Telp" name="No Telpon" value="+62" required minlength="12" maxlength="14" oninvalid="setCustomValidity('Awal harus +62')" oninput="setCustomValidity('')"  >
+        </div>
+
+        <div class="tagging">
+          <label for="Name" >Request Hero</label>
+          <input onclick="ClickeD1()" type="text" id="Name" name="Req Hero" placeholder="*Contoh: Badang only">
         </div>
 
         <p onclick="SyaratB()" ><span style="color:#d46bff" id="syarat"><u>Syarat</span> dan Ketentuan</p></u>
